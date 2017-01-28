@@ -1,0 +1,40 @@
+[27-Jan-2017 18:27:55 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function '_sidebar' not found or invalid function name in /home/ubuntu/workspace/wp-includes/class-wp-hook.php on line 298
+[27-Jan-2017 18:27:55 UTC] PHP Stack trace:
+[27-Jan-2017 18:27:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[27-Jan-2017 18:27:55 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[27-Jan-2017 18:27:55 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[27-Jan-2017 18:27:55 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[27-Jan-2017 18:27:55 UTC] PHP   5. do_action() /home/ubuntu/workspace/wp-settings.php:449
+[27-Jan-2017 18:27:55 UTC] PHP   6. WP_Hook->do_action() /home/ubuntu/workspace/wp-includes/plugin.php:453
+[27-Jan-2017 18:27:55 UTC] PHP   7. WP_Hook->apply_filters() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:323
+[27-Jan-2017 18:27:55 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/wp-includes/class-wp-hook.php:298}() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:298
+[27-Jan-2017 18:27:55 UTC] PHP   9. wp_widgets_init() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:298
+[27-Jan-2017 18:27:55 UTC] PHP  10. do_action() /home/ubuntu/workspace/wp-includes/widgets.php:1474
+[27-Jan-2017 18:27:55 UTC] PHP  11. WP_Hook->do_action() /home/ubuntu/workspace/wp-includes/plugin.php:453
+[27-Jan-2017 18:27:55 UTC] PHP  12. WP_Hook->apply_filters() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:323
+[27-Jan-2017 18:27:55 UTC] PHP  13. call_user_func_array:{/home/ubuntu/workspace/wp-includes/class-wp-hook.php:298}() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:298
+[27-Jan-2017 18:28:33 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function '_sidebar' not found or invalid function name in /home/ubuntu/workspace/wp-includes/class-wp-hook.php on line 298
+[27-Jan-2017 18:28:33 UTC] PHP Stack trace:
+[27-Jan-2017 18:28:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[27-Jan-2017 18:28:33 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[27-Jan-2017 18:28:33 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[27-Jan-2017 18:28:33 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[27-Jan-2017 18:28:33 UTC] PHP   5. do_action() /home/ubuntu/workspace/wp-settings.php:449
+[27-Jan-2017 18:28:33 UTC] PHP   6. WP_Hook->do_action() /home/ubuntu/workspace/wp-includes/plugin.php:453
+[27-Jan-2017 18:28:33 UTC] PHP   7. WP_Hook->apply_filters() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:323
+[27-Jan-2017 18:28:33 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/wp-includes/class-wp-hook.php:298}() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:298
+[27-Jan-2017 18:28:33 UTC] PHP   9. wp_widgets_init() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:298
+[27-Jan-2017 18:28:33 UTC] PHP  10. do_action() /home/ubuntu/workspace/wp-includes/widgets.php:1474
+[27-Jan-2017 18:28:33 UTC] PHP  11. WP_Hook->do_action() /home/ubuntu/workspace/wp-includes/plugin.php:453
+[27-Jan-2017 18:28:33 UTC] PHP  12. WP_Hook->apply_filters() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:323
+[27-Jan-2017 18:28:33 UTC] PHP  13. call_user_func_array:{/home/ubuntu/workspace/wp-includes/class-wp-hook.php:298}() /home/ubuntu/workspace/wp-includes/class-wp-hook.php:298
+[28-Jan-2017 21:48:14 UTC] PHP Fatal error:  Uncaught exception 'UnexpectedValueException' with message 'RecursiveDirectoryIterator::__construct(/home/ubuntu/workspace/wp-content/themes/MyWorsstrap): failed to open dir: No such file or directory' in /home/ubuntu/workspace/wp-content/plugins/theme-check/checkbase.php:164
+Stack trace:
+#0 /home/ubuntu/workspace/wp-content/plugins/theme-check/checkbase.php(164): RecursiveDirectoryIterator->__construct('/home/ubuntu/wo...')
+#1 /home/ubuntu/workspace/wp-content/plugins/theme-check/main.php(6): listdir('/home/ubuntu/wo...')
+#2 /home/ubuntu/workspace/wp-content/plugins/theme-check/theme-check.php(64): check_main('MyWorsstrap')
+#3 [internal function]: ThemeCheckMain->themecheck_do_page('')
+#4 /home/ubuntu/workspace/wp-includes/class-wp-hook.php(298): call_user_func_array(Array, Array)
+#5 /home/ubuntu/workspace/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters('', Array)
+#6 /home/ubuntu/workspace/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#7 /home/ubuntu/workspace/wp-admin/admin.php(222): do_ in /home/ubuntu/workspace/wp-content/plugins/theme-check/checkbase.php on line 164
